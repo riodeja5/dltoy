@@ -108,7 +108,7 @@ def predict():
     global graph
     with graph.as_default():
         model = VGG16()
-        #img = load_img('blog/tmp/tmp_img', target_size=(224, 224))
+        img = load_img('blog/tmp/tmp_img', target_size=(224, 224))
         img = load_img(tmp_img, target_size=(224, 224))
         arr_data = img_to_array(img)
         arr_data = preprocess_input(arr_data)
